@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>등록</title>
+    <style>
+      #write_area {
+        font-size: 20px;
+
+      }
+      body {
+        text-align: center;
+        margin: auto;
+        width : 100%;
+        height:  100%;
+
+      }
+    </style>
+  </head>
+  <body>
+   <div id="board_write">
+   <h1><a href="/">등록</a></h1>
+     <div id="write box">
+       <form class="board_submit" action="movie_write_ok.php" enctype="multipart/form-data" method="post">
+       <div>
+         이름 : <input type="text" name="name" size = 50  value="name">
+       </div>
+       <br>
+       <div>
+         타이틀 : <input type="text" name="cont_1" size = 50  value="title">
+       </div>
+       <br>
+       <div>
+         내용 : <input type="text" name="cont_2"  width="50" height="500" value="contents">
+       </div>
+       <br>
+         이미지 등록 : <input type="file" name="lo_image_link" value = 1>
+       <br>
+       <div class="submit_button">
+         <button type="submit" name="submit_button">등록</button>
+       </div>
+     </form>
+     </div>
+   </div>
+ </body>
+
+</html>
